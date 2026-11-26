@@ -1,6 +1,7 @@
 import { Hono, type Context } from 'hono';
 import { context, reddit, redis } from '@devvit/web/server';
 import type {
+  BoardRow,
   DayResponse,
   ErrorResponse,
   GuessResponse,
@@ -158,6 +159,18 @@ api.post('/forfeit', async (c) => {
       ? seg
       : await store.finish(day, q, username, 'timeout', null);
   return c.json<GuessResponse>(await done(day, q, username, segment, 0, 0));
+});
+
+// The full board for one question, once you've finished it.
+api.get('/board', async (c) => {
+  const username = await reddit.getCurrentUsername();
+  if (!username) return fail(c, 'Log in to Reddit to play.', 401);
+  const day = await postDay();
+  const q = questionsFor(day).find((x) => x.slot === Number(c.req.query('slot')));
+  if (!q) return fail(c, 'No such segment.', 404);
+  const seg = await store.readSegment(day, q, username);
+  if (seg.status !== 'done') return fail(c, 'Finish the question first.');
+  return c.json<BoardRow[]>(await store.board(day, q));
 });
 
 api.get('/leaderboard', async (c) => {

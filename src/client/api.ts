@@ -1,4 +1,5 @@
 import type {
+  BoardRow,
   DayResponse,
   ErrorResponse,
   GuessResponse,
@@ -36,6 +37,7 @@ export const api = {
     call<GuessResponse>('guess', { slot, guess }),
   forfeit: (slot: number) => call<GuessResponse>('forfeit', { slot }),
   leaderboard: () => call<LeaderboardResponse>('leaderboard'),
+  board: (slot: number) => call<BoardRow[]>(`board?slot=${slot}`),
 };
 
 export const prettyDay = (day: string) =>

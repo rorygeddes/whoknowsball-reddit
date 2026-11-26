@@ -3,7 +3,6 @@ import './index.css';
 import { showToast } from '@devvit/web/client';
 import {
   StrictMode,
-  useCallback,
   useEffect,
   useEffectEvent,
   useRef,
@@ -16,31 +15,51 @@ import {
   STRIKES,
   TIERS,
   shareText,
+  sportStyle,
+  type BoardRow,
   type DayResponse,
   type GuessResponse,
   type LeaderboardResponse,
   type PublicQuestion,
   type Segment,
+  type Tier,
 } from '../shared/game';
 import { api, prettyDay } from './api';
-import { Board, Dots } from './parts';
+import BrandBall from './wkb/BrandBall';
+import CartoonPlayer from './wkb/CartoonPlayer';
+import Confetti from './wkb/Confetti';
+import CountUp from './wkb/CountUp';
+import Icon from './wkb/Icon';
+import StadiumBg from './wkb/StadiumBg';
+import TierBadge from './wkb/TierBadge';
+import TierBoard from './wkb/TierBoard';
+import TierBoom from './wkb/TierBoom';
+import Wheel from './wkb/Wheel';
 
-type Done = Extract<GuessResponse, { kind: 'done' }>;
+type Done = Extract<GuessResponse, { kind: 'done' }> & { guess?: string };
 type Phase =
   | { at: 'loading' }
   | { at: 'error'; message: string }
   | { at: 'intro'; i: number }
+  | { at: 'spin'; i: number }
   | { at: 'question'; i: number }
   | { at: 'result'; i: number; r: Done }
   | { at: 'summary' };
 
 const firstOpen = (segs: Segment[]) =>
   segs.findIndex((s) => s.status !== 'done');
+const norm = (t: string) =>
+  t
+    .normalize('NFD')
+    .replace(/\p{M}/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
 
 export const App = () => {
   const [day, setDay] = useState<DayResponse | null>(null);
   const [phase, setPhase] = useState<Phase>({ at: 'loading' });
   const [offset, setOffset] = useState(0);
+  const [boom, setBoom] = useState<{ tier: Tier; key: number } | null>(null);
 
   useEffect(() => {
     api
@@ -60,7 +79,7 @@ export const App = () => {
       .catch((e: Error) => setPhase({ at: 'error', message: e.message }));
   }, []);
 
-  const finish = useCallback((i: number, r: Done) => {
+  const finish = (i: number, r: Done) => {
     setDay(
       (d) =>
         d && {
@@ -69,8 +88,9 @@ export const App = () => {
           segments: d.segments.map((s, k) => (k === i ? r.segment : s)),
         }
     );
+    setBoom({ tier: r.segment.tier, key: i });
     setPhase({ at: 'result', i, r });
-  }, []);
+  };
 
   const next = (i: number) =>
     setPhase(
@@ -79,73 +99,118 @@ export const App = () => {
         : { at: 'summary' }
     );
 
-  if (phase.at === 'loading') return <Center>Warming up…</Center>;
-  if (phase.at === 'error') return <Center>{phase.message}</Center>;
+  if (phase.at === 'loading') return <Shell>Warming up…</Shell>;
+  if (phase.at === 'error') return <Shell>{phase.message}</Shell>;
   if (!day) return null;
   if (!day.username)
-    return <Center>Log in to Reddit to play today&apos;s quiz.</Center>;
+    return <Shell>Log in to Reddit to play today&apos;s quiz.</Shell>;
 
   const current = 'i' in phase ? phase.i : -1;
   return (
-    <div className="min-h-screen flex flex-col items-center px-4 py-5 gap-4">
-      <div className="flex w-full max-w-xl items-center justify-between">
-        <span className="display text-xl" style={{ color: 'var(--volt)' }}>
-          Who Knows Ball
+    <>
+      <StadiumBg />
+      <header className="post-head">
+        <span className="brand">
+          <BrandBall /> Who Knows Ball
         </span>
-        <Dots segments={day.segments} current={current} />
-      </div>
-      <div className="w-full max-w-xl flex-1 flex flex-col justify-center">
-        {phase.at === 'intro' && (
-          <Intro
-            q={day.questions[phase.i]!}
-            onGo={() => setPhase({ at: 'question', i: phase.i })}
-          />
+        {day.streak > 0 && (
+          <span className="streak-pill">
+            <Icon name="flame" size={14} /> {day.streak}
+          </span>
         )}
-        {phase.at === 'question' && (
-          <Question
-            key={phase.i}
-            q={day.questions[phase.i]!}
-            offset={offset}
-            onDone={(r) => finish(phase.i, r)}
-          />
-        )}
-        {phase.at === 'result' && (
-          <Result
-            q={day.questions[phase.i]!}
-            r={phase.r}
-            last={phase.i === day.questions.length - 1}
-            onNext={() => next(phase.i)}
-          />
-        )}
-        {phase.at === 'summary' && <Summary day={day} />}
-      </div>
-    </div>
+      </header>
+      <main>
+        <div className="stage">
+          {phase.at !== 'summary' && (
+            <div className="progress">
+              {day.segments.map((s, k) =>
+                s.status === 'done' ? (
+                  <i
+                    key={k}
+                    className="on"
+                    style={{ ['--c' as string]: TIERS[s.tier].color }}
+                  />
+                ) : (
+                  <i key={k} className={k === current ? 'cur' : ''} />
+                )
+              )}
+            </div>
+          )}
+          {phase.at === 'intro' && (
+            <Intro
+              q={day.questions[phase.i]!}
+              onGo={() => setPhase({ at: 'spin', i: phase.i })}
+            />
+          )}
+          {phase.at === 'spin' && (
+            <Spin
+              q={day.questions[phase.i]!}
+              onDone={() => setPhase({ at: 'question', i: phase.i })}
+            />
+          )}
+          {phase.at === 'question' && (
+            <Question
+              key={phase.i}
+              q={day.questions[phase.i]!}
+              offset={offset}
+              onDone={(r) => finish(phase.i, r)}
+            />
+          )}
+          {phase.at === 'result' && (
+            <Result
+              q={day.questions[phase.i]!}
+              r={phase.r}
+              last={phase.i === day.questions.length - 1}
+              onNext={() => next(phase.i)}
+            />
+          )}
+          {phase.at === 'summary' && <Summary day={day} />}
+        </div>
+      </main>
+      {boom && (
+        <TierBoom
+          key={boom.key}
+          tier={boom.tier}
+          onDone={() => setBoom(null)}
+        />
+      )}
+    </>
   );
 };
 
-const Center = ({ children }: { children: ReactNode }) => (
-  <div className="min-h-screen flex items-center justify-center display text-2xl px-6 text-center">
-    {children}
-  </div>
+const Shell = ({ children }: { children: ReactNode }) => (
+  <>
+    <StadiumBg />
+    <main>
+      <div className="stage">
+        <div className="intro-cat">{children}</div>
+      </div>
+    </main>
+  </>
 );
 
 function Intro({ q, onGo }: { q: PublicQuestion; onGo: () => void }) {
   const go = useEffectEvent(onGo);
   useEffect(() => {
-    const t = setTimeout(() => go(), 1800);
+    const t = setTimeout(() => go(), 2200);
     return () => clearTimeout(t);
   }, []);
   return (
-    <button className="pop text-center cursor-pointer" onClick={onGo}>
-      <div
-        className="display text-[120px] leading-none"
-        style={{ color: 'var(--volt)' }}
-      >
-        0{q.slot}
+    <div onClick={onGo} style={{ cursor: 'pointer' }}>
+      <div className="intro-num">0{q.slot}</div>
+      <div className="intro-cat">{q.category}</div>
+    </div>
+  );
+}
+
+function Spin({ q, onDone }: { q: PublicQuestion; onDone: () => void }) {
+  return (
+    <div>
+      <div className="intro-cat" style={{ fontSize: 34, marginBottom: 20 }}>
+        Spinning for the sport…
       </div>
-      <div className="display text-4xl">{q.category}</div>
-      <div className="chip mt-3">{q.sport}</div>
-    </button>
+      <Wheel target={q.sport} onDone={onDone} />
+    </div>
   );
 }
 
@@ -167,12 +232,13 @@ function Question({
   const [busy, setBusy] = useState(false);
   const over = useRef(false);
   const input = useRef<HTMLInputElement>(null);
-  const settle = (r: GuessResponse) => {
+
+  const settle = (r: GuessResponse, typed?: string) => {
     if (r.kind !== 'done' || over.current) return;
     over.current = true;
-    onDone(r);
+    onDone(typed ? { ...r, guess: typed } : r);
   };
-  const end = useEffectEvent(settle);
+  const end = useEffectEvent((r: GuessResponse) => settle(r));
 
   useEffect(() => {
     api
@@ -181,7 +247,7 @@ function Question({
         if (s.status === 'playing') {
           setEndsAt(s.endsAt + offset);
           setStrikes(s.strikes);
-          setTimeout(() => input.current?.focus(), 30);
+          setTimeout(() => input.current?.focus(), 50);
         } else if (s.status === 'done')
           api.forfeit(q.slot).then(end).catch(console.error);
       })
@@ -208,7 +274,7 @@ function Question({
     setBusy(true);
     try {
       const r = await api.guess(q.slot, g);
-      if (r.kind === 'done') return settle(r);
+      if (r.kind === 'done') return settle(r, g);
       if (r.kind === 'invalid') return setMsg('Give us a real name.');
       setStrikes(r.strikes);
       setMsg(`Not on the board: "${g}"`);
@@ -222,27 +288,27 @@ function Question({
     }
   };
 
+  const st = sportStyle(q.sport);
+  const pct = Math.max(0, Math.min(100, (left / q.timeLimit) * 100));
   return (
-    <div
-      className={`panel p-5 flex flex-col gap-4 rise ${shake ? 'shake' : ''}`}
-    >
-      <div className="flex items-center justify-between gap-3">
-        <span className="chip">
-          {q.sport} · {q.category}
+    <div className={`qcard ${shake ? 'shake' : ''}`}>
+      <div className="qmeta">
+        <span className="chip" style={{ color: st.color }}>
+          <Icon name={st.icon} size={15} /> {q.sport} · {q.category}
         </span>
         <span className={`shotclock ${left > 10 ? 'ok' : ''}`}>
           {String(left).padStart(2, '0')}
         </span>
       </div>
       <div className="timebar">
-        <i
-          style={{
-            width: `${Math.max(0, Math.min(100, (left / q.timeLimit) * 100))}%`,
-          }}
-        />
+        <i style={{ width: pct + '%' }} />
       </div>
-      <div className="text-2xl font-extrabold leading-snug">{q.prompt}</div>
-      {q.hint && <div className="muted text-sm">💡 {q.hint}</div>}
+      <div className="qprompt">{q.prompt}</div>
+      {q.hint && (
+        <div className="qhint ic-row">
+          <Icon name="hint" size={16} /> {q.hint}
+        </div>
+      )}
       <form className="guess" onSubmit={submit}>
         <input
           ref={input}
@@ -256,20 +322,13 @@ function Question({
           Shoot
         </button>
       </form>
-      <div className="flex items-center justify-between min-h-7">
-        <span className="text-sm" style={{ color: 'var(--red)' }}>
-          {msg}
-        </span>
-        <span className="flex gap-1.5 text-xl font-black">
-          {Array.from({ length: STRIKES }, (_, k) => (
-            <span
-              key={k}
-              style={{ color: k < strikes ? 'var(--red)' : 'var(--line)' }}
-            >
-              ✕
-            </span>
-          ))}
-        </span>
+      <div className="missmsg">{msg}</div>
+      <div className="strikes">
+        {Array.from({ length: STRIKES }, (_, k) => (
+          <span key={k} className={k < strikes ? 'x' : ''}>
+            <Icon name="x" size={22} strokeWidth={3} />
+          </span>
+        ))}
       </div>
     </div>
   );
@@ -289,46 +348,74 @@ function Result({
   const t = TIERS[r.segment.tier];
   const hit = r.segment.answer !== null;
   return (
-    <div className="flex flex-col gap-4 rise">
-      <div
-        className="panel p-5 text-center"
-        style={{ borderColor: t.color, boxShadow: `0 0 40px -12px ${t.color}` }}
-      >
-        <div className="display text-5xl pop" style={{ color: t.color }}>
-          {t.label}
+    <>
+      {r.segment.points >= 85 && <Confetti />}
+      <div className="result" style={{ ['--c' as string]: t.color }}>
+        <div className="playercard">
+          <span className="ptier">{t.label.toUpperCase()}</span>
+          {hit ? (
+            <CartoonPlayer
+              name={r.segment.answer}
+              sport={q.sport}
+              isTeam={false}
+            />
+          ) : (
+            <div style={{ textAlign: 'center', padding: '50px 0' }}>
+              <Icon
+                name={r.segment.tier === 'timeout' ? 'timer' : 'wall'}
+                size={110}
+                strokeWidth={1.6}
+                color={t.color}
+              />
+            </div>
+          )}
+          <div className="pname">{hit ? r.segment.answer : t.label}</div>
         </div>
-        <div className="display text-3xl mt-1">
-          {hit
-            ? r.segment.answer
-            : r.segment.tier === 'timeout'
-              ? 'Out of time'
-              : 'Three strikes'}
+        <div>
+          <TierBadge tier={r.segment.tier} big />
+          <div className="bigpoints" style={{ marginTop: 14 }}>
+            +<CountUp to={r.segment.points} />
+            <small>pts</small>
+          </div>
+          <p className="muted" style={{ margin: '6px 0 0' }}>
+            {hit && r.sharePct !== null
+              ? `${r.sharePct}% of ${r.players} player${r.players === 1 ? '' : 's'} said this so far. ${t.blurb}`
+              : t.blurb}
+          </p>
+          {hit && r.guess && norm(r.guess) !== norm(r.segment.answer ?? '') && (
+            <p className="autocorrect">
+              <Icon name="hint" size={15} /> Autocorrected: you typed{' '}
+              <s>{r.guess}</s> <b>{r.segment.answer}</b>
+            </p>
+          )}
+          <div
+            style={{
+              marginTop: 18,
+              fontWeight: 700,
+              fontSize: 13,
+              letterSpacing: '.06em',
+              textTransform: 'uppercase',
+            }}
+            className="muted"
+          >
+            The board
+          </div>
+          <TierBoard reveal={r.board} mine={r.segment.answer} />
+          <div style={{ marginTop: 22 }}>
+            <button className="btn" onClick={onNext}>
+              {last ? 'Final score' : 'Next segment'}{' '}
+              <Icon name="play" size={18} />
+            </button>
+          </div>
         </div>
-        <div className="display text-6xl mt-2">
-          +{r.segment.points}
-          <span className="text-xl muted"> pts</span>
-        </div>
-        <p className="muted text-sm mt-1">
-          {hit && r.sharePct !== null
-            ? `${r.sharePct}% of ${r.players} player${r.players === 1 ? '' : 's'} said this so far. ${t.blurb}`
-            : t.blurb}
-        </p>
       </div>
-      <div>
-        <div className="text-xs font-bold tracking-widest uppercase muted mb-2">
-          The board · {q.prompt}
-        </div>
-        <Board rows={r.board} mine={r.segment.answer} />
-      </div>
-      <button className="btn self-center" onClick={onNext}>
-        {last ? 'Final score' : 'Next segment'}
-      </button>
-    </div>
+    </>
   );
 }
 
 function Summary({ day }: { day: DayResponse }) {
   const [lb, setLb] = useState<LeaderboardResponse | null>(null);
+  const [sheet, setSheet] = useState<number | null>(null);
   useEffect(() => {
     api.leaderboard().then(setLb).catch(console.error);
   }, []);
@@ -336,6 +423,7 @@ function Summary({ day }: { day: DayResponse }) {
     (n, s) => n + (s.status === 'done' ? s.points : 0),
     0
   );
+  const [weekday, ...rest] = prettyDay(day.day).split(', ');
 
   const share = async () => {
     try {
@@ -347,83 +435,162 @@ function Summary({ day }: { day: DayResponse }) {
   };
 
   return (
-    <div className="flex flex-col gap-4 rise">
-      <div className="panel p-5 text-center">
-        <div className="muted text-sm">{prettyDay(day.day)} · Final</div>
-        <div className="display text-7xl pop" style={{ color: 'var(--volt)' }}>
-          {total}
+    <div className="final">
+      {total >= 300 && <Confetti count={90} />}
+      <div className="final-left">
+        <CartoonPlayer name={day.username} sport="" size={150} isTeam={false} />
+        <div className="final-user">u/{day.username}</div>
+        <div className="summary-score">
+          <CountUp to={total} ms={1400} />
         </div>
-        <div className="muted display">out of {day.segments.length * 100}</div>
+        <div className="muted display" style={{ fontSize: 18 }}>
+          out of {day.questions.length * 100}
+        </div>
         {day.streak > 0 && (
-          <div className="chip mt-2">🔥 {day.streak} day streak</div>
+          <div className="streak-pill" style={{ marginTop: 12 }}>
+            <Icon name="flame" size={16} /> {day.streak} day streak
+          </div>
         )}
-        <div className="text-2xl mt-3 tracking-widest">
-          {day.segments
-            .map((s) => (s.status === 'done' ? TIERS[s.tier].emoji : ''))
-            .join('')}
-        </div>
-        <button className="btn mt-3" onClick={share}>
-          Share result
+        <button
+          className="btn"
+          style={{ marginTop: 16, fontSize: 18, padding: '12px 22px' }}
+          onClick={share}
+        >
+          <Icon name="copy" size={18} /> Share
         </button>
       </div>
-      <div className="panel p-4 flex flex-col gap-1.5">
+      <div className="final-center">
+        <div className="final-date">
+          {weekday}
+          <br />
+          {rest.join(', ')}
+        </div>
+        <div className="final-title">FINAL</div>
+        <div
+          className="card"
+          style={{
+            marginTop: 14,
+            width: '100%',
+            textAlign: 'left',
+            padding: 16,
+          }}
+        >
+          <div className="display" style={{ fontSize: 18, marginBottom: 6 }}>
+            Today&apos;s standings
+          </div>
+          {!lb ? (
+            <div className="muted">Loading…</div>
+          ) : (
+            <>
+              {lb.top.map((p, k) => (
+                <div
+                  key={p.username}
+                  className={`lb-row ${p.username === day.username ? 'me' : ''}`}
+                >
+                  <span>
+                    {k + 1}. u/{p.username}
+                  </span>
+                  <b>{p.points}</b>
+                </div>
+              ))}
+              {lb.me && lb.me.rank > lb.top.length && (
+                <div className="lb-row me">
+                  <span>
+                    {lb.me.rank}. u/{day.username}
+                  </span>
+                  <b>{lb.me.points}</b>
+                </div>
+              )}
+              <div className="muted" style={{ fontSize: 12, marginTop: 6 }}>
+                {lb.players} player{lb.players === 1 ? '' : 's'} today
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+      <div className="final-right">
         {day.questions.map((q, i) => {
           const s = day.segments[i]!;
-          const t = s.status === 'done' ? TIERS[s.tier] : null;
+          const t = s.status === 'done' ? TIERS[s.tier] : TIERS.miss;
+          const st = sportStyle(q.sport);
           return (
-            <div
+            <button
+              className="fseg"
               key={q.slot}
-              className="flex items-center justify-between gap-2 text-sm"
+              style={{
+                ['--c' as string]: st.color,
+                animationDelay: `${i * 0.08}s`,
+              }}
+              onClick={() => setSheet(i)}
+              title="See every answer"
             >
-              <span className="truncate">
-                <b>{q.sport}</b>{' '}
-                <span className="muted">
-                  {s.status === 'done' ? (s.answer ?? t?.label) : '…'}
-                </span>
+              <span className="fseg-icon">
+                <Icon name={st.icon} size={22} color={st.color} />
               </span>
-              <span className="shrink-0 font-bold" style={{ color: t?.color }}>
-                {t ? `${t.label} +${s.status === 'done' ? s.points : 0}` : ''}
-              </span>
-            </div>
+              <div className="fseg-mid">
+                <div className="fseg-cat">{q.category}</div>
+                <div className="fseg-ans">
+                  {s.status === 'done' ? (s.answer ?? t.label) : t.label}
+                </div>
+              </div>
+              <div className="fseg-pts">
+                <span>{t.label}</span>
+                <b>+{s.status === 'done' ? s.points : 0}</b>
+              </div>
+            </button>
           );
         })}
       </div>
-      <div className="panel p-4">
-        <div className="display text-xl mb-2">Today&apos;s leaderboard</div>
-        {!lb ? (
-          <div className="muted text-sm">Loading…</div>
+      {sheet !== null && (
+        <AnswerSheet
+          q={day.questions[sheet]!}
+          seg={day.segments[sheet]!}
+          onClose={() => setSheet(null)}
+        />
+      )}
+    </div>
+  );
+}
+
+function AnswerSheet({
+  q,
+  seg,
+  onClose,
+}: {
+  q: PublicQuestion;
+  seg: Segment;
+  onClose: () => void;
+}) {
+  const [rows, setRows] = useState<BoardRow[] | null>(null);
+  useEffect(() => {
+    api.board(q.slot).then(setRows).catch(console.error);
+  }, [q.slot]);
+  const mine = seg.status === 'done' ? seg.answer : null;
+  return (
+    <div className="modal" onClick={onClose}>
+      <div className="card answer-sheet" onClick={(e) => e.stopPropagation()}>
+        <div className="badges-top">
+          <div className="fseg-cat">
+            0{q.slot} · {q.category}
+          </div>
+          <button className="mini" onClick={onClose} aria-label="Close">
+            <Icon name="x" size={14} />
+          </button>
+        </div>
+        <h2 style={{ margin: '6px 0 4px' }}>{q.prompt}</h2>
+        <p className="muted" style={{ margin: 0 }}>
+          {mine ? (
+            <>
+              You said <b style={{ color: 'var(--volt)' }}>{mine}</b>.
+            </>
+          ) : (
+            'No answer this time.'
+          )}
+        </p>
+        {rows ? (
+          <TierBoard reveal={rows} mine={mine} />
         ) : (
-          <>
-            {lb.top.map((p, k) => (
-              <div
-                key={p.username}
-                className="flex justify-between text-sm py-0.5"
-                style={{
-                  color:
-                    p.username === day.username ? 'var(--volt)' : undefined,
-                }}
-              >
-                <span>
-                  {k + 1}. u/{p.username}
-                </span>
-                <b>{p.points}</b>
-              </div>
-            ))}
-            {lb.me && lb.me.rank > lb.top.length && (
-              <div
-                className="flex justify-between text-sm pt-2 mt-1 border-t"
-                style={{ borderColor: 'var(--line)', color: 'var(--volt)' }}
-              >
-                <span>
-                  {lb.me.rank}. u/{day.username}
-                </span>
-                <b>{lb.me.points}</b>
-              </div>
-            )}
-            <div className="muted text-xs mt-2">
-              {lb.players} player{lb.players === 1 ? '' : 's'} today
-            </div>
-          </>
+          <p className="muted">Loading the board…</p>
         )}
       </div>
     </div>

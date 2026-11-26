@@ -1,202 +1,55 @@
 @import 'tailwindcss';
+@import '@fontsource/anton/latin-400.css';
+@import '@fontsource/inter/latin-400.css';
+@import '@fontsource/inter/latin-600.css';
+@import '@fontsource/inter/latin-700.css';
+@import '@fontsource/inter/latin-800.css';
+@import './wkb.css';
 
 :root {
-  --bg: #070b16;
-  --panel: #0f1730;
-  --panel2: #16213f;
-  --line: #233056;
-  --volt: #d4ff3a;
-  --red: #ff4d5e;
-  --text: #eef2ff;
-  --muted: #8d98b8;
+  --font-display: 'Anton';
+  --font-body: 'Inter';
 }
 
-html,
-body {
-  margin: 0;
-  color: var(--text);
-  font-family:
-    system-ui,
-    -apple-system,
-    'Segoe UI',
-    sans-serif;
-  background:
-    radial-gradient(900px 420px at 50% -12%, #1a2a5a 0%, transparent 62%),
-    repeating-linear-gradient(
-      90deg,
-      transparent 0 90px,
-      rgba(255, 255, 255, 0.018) 90px 180px
-    ),
-    var(--bg);
+main {
+  min-height: 100vh;
+  padding: 16px 16px 40px;
 }
 
-.display {
-  font-family:
-    Impact, 'Arial Narrow Bold', 'Helvetica Neue Condensed', sans-serif;
-  letter-spacing: 0.03em;
+.post-head {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 12px 16px 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display), Impact, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: var(--volt);
   text-transform: uppercase;
-}
-
-.muted {
-  color: var(--muted);
-}
-
-.btn {
-  font-family: Impact, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  background: var(--volt);
-  color: #0a0f1c;
-  border: 0;
-  border-radius: 999px;
-  padding: 12px 26px;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 6px 0 #7f9a12;
-  transition: transform 0.08s;
-}
-.btn:active {
-  transform: translateY(3px);
-  box-shadow: 0 3px 0 #7f9a12;
-}
-.btn:disabled {
-  opacity: 0.5;
-}
-.btn.ghost {
-  background: transparent;
-  color: var(--text);
-  border: 2px solid var(--line);
-  box-shadow: none;
-  font-size: 16px;
-  padding: 8px 18px;
 }
 
 .chip {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 4px 12px;
-  border-radius: 999px;
-  background: var(--panel2);
-  border: 1px solid var(--line);
-  font-size: 13px;
-  font-weight: 700;
 }
 
-.dots {
+.lb-row {
   display: flex;
-  gap: 6px;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 15px;
 }
-.dots i {
-  width: 34px;
-  height: 8px;
-  border-radius: 99px;
-  background: var(--line);
-}
-.dots i.on {
-  background: var(--c);
-}
-.dots i.cur {
-  background: var(--volt);
-  animation: pulse 1s infinite alternate;
-}
-@keyframes pulse {
-  to {
-    opacity: 0.35;
-  }
-}
-
-.shotclock {
-  font-family: Impact, sans-serif;
-  font-size: 34px;
-  min-width: 64px;
-  text-align: center;
-  padding: 2px 10px;
-  border-radius: 10px;
-  background: #000;
-  color: var(--red);
-  border: 2px solid #2a0d12;
-}
-.shotclock.ok {
+.lb-row.me {
   color: var(--volt);
-  border-color: #2b3410;
-}
-
-.timebar {
-  height: 6px;
-  border-radius: 99px;
-  background: var(--line);
-  overflow: hidden;
-}
-.timebar i {
-  display: block;
-  height: 100%;
-  background: linear-gradient(90deg, var(--red), var(--volt));
-  transition: width 0.25s linear;
-}
-
-.guess {
-  display: flex;
-  gap: 8px;
-}
-.guess input {
-  flex: 1;
-  min-width: 0;
-  font-size: 18px;
-  padding: 12px 16px;
-  border-radius: 14px;
-  border: 2px solid var(--line);
-  background: #050913;
-  color: var(--text);
-  outline: none;
-}
-.guess input:focus {
-  border-color: var(--volt);
-}
-
-.shake {
-  animation: shake 0.35s;
-}
-@keyframes shake {
-  20%,
-  60% {
-    transform: translateX(-8px);
-  }
-  40%,
-  80% {
-    transform: translateX(8px);
-  }
-}
-
-.pop {
-  animation: pop 0.45s cubic-bezier(0.2, 1.6, 0.4, 1);
-}
-@keyframes pop {
-  from {
-    transform: scale(0.6);
-    opacity: 0;
-  }
-}
-
-.rise {
-  animation: rise 0.4s ease-out both;
-}
-@keyframes rise {
-  from {
-    transform: translateY(14px);
-    opacity: 0;
-  }
-}
-
-.panel {
-  background: color-mix(in srgb, var(--panel) 88%, transparent);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
 }

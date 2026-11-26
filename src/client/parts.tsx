@@ -8,10 +8,14 @@ export function Dots({
   current: number;
 }) {
   return (
-    <div className="dots">
+    <div className="progress" style={{ marginBottom: 0 }}>
       {segments.map((s, i) =>
         s.status === 'done' ? (
-          <i key={i} style={{ background: TIERS[s.tier].color }} />
+          <i
+            key={i}
+            className="on"
+            style={{ background: TIERS[s.tier].color }}
+          />
         ) : (
           <i key={i} className={i === current ? 'cur' : ''} />
         )

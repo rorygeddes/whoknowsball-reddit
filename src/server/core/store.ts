@@ -117,6 +117,7 @@ export async function board(day: string, q: Question): Promise<BoardRow[]> {
     .map((a) => ({
       answer: a.answer,
       tier: fixedOr(a.tier),
+      picks: counts[a.answer] ?? 0,
       pct: total ? Math.round((100 * (counts[a.answer] ?? 0)) / total) : 0,
     }))
     .sort(
