@@ -33,12 +33,21 @@ The original's player vault, trades, live scores ticker, league logos and player
 ## Status
 
 - [x] Devvit project set up from Reddit's React template
-- [ ] Port the daily quiz and rarity scoring
-- [ ] Streaks and daily leaderboard in Redis
-- [ ] Automatic daily post
-- [ ] Result card
-- [ ] Two weeks of questions
+- [x] The daily quiz: five segments, a shot clock, three strikes, typo-tolerant answers
+- [x] Rarity scoring, from fixed tiers or from the share of players who gave the same answer
+- [x] Streaks and a daily leaderboard in Redis
+- [x] Automatic daily post (scheduler, just after midnight Eastern), plus a mod menu item to post it by hand
+- [x] 7 days of questions (35 questions, 700+ answers), carried over from the original game
+- [ ] Result card people can post as a comment
+- [ ] Two full weeks of questions
 - [ ] Polish, test subreddit and video
+
+## How it works
+
+- `src/server/data/questions.json` holds the question bank. Day 1 is November 27, 2026, and the days repeat when the bank runs out. `tools/import-questions.mjs` builds it from the original game's seed SQL, keeping only questions whose answers can't change.
+- `src/server/core/rules.ts` holds the game rules as plain functions: answer matching with autocorrect, rarity tiers and streaks. `npm run test:unit` tests them.
+- `src/server/core/store.ts` keeps everything in Redis. Each segment ends once, so a double tap or a retry never counts twice.
+- Answers stay on the server. The post only ever sees the question, the clock and your result.
 
 ## Built with
 
@@ -56,6 +65,8 @@ npm run login     # link the CLI to your Reddit account
 npm run dev       # playtest live on your test subreddit
 npm run deploy    # upload a new version
 ```
+
+To play it without Reddit, run `npm run build && npm run local` and open http://localhost:7474/game.html. That runs the real server routes with an in-memory Redis. Add `?user=someone` to the URL to play as a second person.
 
 ## License
 

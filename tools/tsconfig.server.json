@@ -6,9 +6,10 @@
     "customConditions": [],
     "types": ["node"],
     "exactOptionalPropertyTypes": false,
+    "rewriteRelativeImportExtensions": true,
     "rootDir": "../src/server"
   },
-  "include": ["../src/server/**/*"],
+  "include": ["../src/server/**/*", "../src/server/**/*.json"],
   "exclude": [],
   "references": [
     {

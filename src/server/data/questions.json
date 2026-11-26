@@ -1,0 +1,4007 @@
+[
+  [
+    {
+      "category": "North American Sports",
+      "sport": "Hockey",
+      "prompt": "Name a player who scored 50+ goals in a single NHL season.",
+      "hint": "Gretzky is the obvious one. Go deeper.",
+      "timeLimit": 45,
+      "answers": [
+        {
+          "answer": "Wayne Gretzky",
+          "aliases": ["The Great One"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Alex Ovechkin",
+          "aliases": ["Ovi", "Alexander Ovechkin"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Auston Matthews",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Connor McDavid",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Mario Lemieux",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Leon Draisaitl",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Brett Hull",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Steven Stamkos",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Mike Bossy",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Teemu Selanne",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Pavel Bure",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Lanny McDonald",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Dennis Maruk",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Rick Vaive",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Craig Simpson",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Bernie Nicholls",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Blaine Stoughton",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Danny Grant",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Pierre Larouche",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Sidney Crosby",
+          "aliases": ["Sid Crosby", "Sid the Kid"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Bobby Hull",
+          "aliases": ["The Golden Jet"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Phil Esposito",
+          "aliases": ["Espo"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Maurice Richard",
+          "aliases": ["Rocket Richard", "The Rocket"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Guy Lafleur",
+          "aliases": ["The Flower"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Jaromir Jagr",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Steve Yzerman",
+          "aliases": ["Stevie Y"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Joe Sakic",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Jarome Iginla",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "David Pastrnak",
+          "aliases": ["Pasta"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Nathan MacKinnon",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Mark Messier",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Marcel Dionne",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Evgeni Malkin",
+          "aliases": ["Geno", "Evgeny Malkin"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Zach Hyman",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Sam Reinhart",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jari Kurri",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Luc Robitaille",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Alexander Mogilny",
+          "aliases": ["Alex Mogilny"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mike Gartner",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Cam Neely",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Sergei Fedorov",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Brendan Shanahan",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Pat LaFontaine",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Pierre Turgeon",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jeremy Roenick",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mike Modano",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Paul Kariya",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Keith Tkachuk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "John LeClair",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Peter Bondra",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Ilya Kovalchuk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Dany Heatley",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Vincent Lecavalier",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Corey Perry",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mikko Rantanen",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Brayden Point",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Chris Kreider",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Dale Hawerchuk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Michel Goulet",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Bryan Trottier",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Glenn Anderson",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Joe Nieuwendyk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Theo Fleury",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Bernie Geoffrion",
+          "aliases": ["Boom Boom Geoffrion"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Reggie Leach",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Steve Shutt",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Joe Mullen",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Dino Ciccarelli",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mark Recchi",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Dave Andreychuk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Gary Roberts",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Adam Graves",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Kevin Stevens",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Milan Hejduk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jonathan Cheechoo",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Tim Kerr",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Johnny Bucyk",
+          "aliases": ["John Bucyk"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mickey Redmond",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Rick Martin",
+          "aliases": ["Richard Martin"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Bill Barber",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Rick MacLeish",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Vic Hadfield",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Charlie Simmer",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Danny Gare",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Rick Kehoe",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Rick Middleton",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "John Ogrodnick",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Mike Bullard",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Al Secord",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Jimmy Carson",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Stephane Richer",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Brian Bellows",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Ray Sheppard",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Gary Leeman",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Bobby Carpenter",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Ken Hodge",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Hakan Loob",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Jean Pronovost",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Wayne Babych",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Guy Chouinard",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Jacques Richard",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "Solo Sports",
+      "sport": "Tennis",
+      "prompt": "Name a man who has won the Wimbledon singles title since 1990.",
+      "hint": "The Big Three get you on the board. Barely.",
+      "timeLimit": 45,
+      "answers": [
+        {
+          "answer": "Roger Federer",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Novak Djokovic",
+          "aliases": ["Djoker"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Rafael Nadal",
+          "aliases": ["Rafa"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Carlos Alcaraz",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Andy Murray",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Pete Sampras",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Jannik Sinner",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Andre Agassi",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Lleyton Hewitt",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Goran Ivanisevic",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Stefan Edberg",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Michael Stich",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Richard Krajicek",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "International",
+      "sport": "Soccer",
+      "prompt": "Name a country that has played in a men's FIFA World Cup final.",
+      "hint": "Think older than you think.",
+      "timeLimit": 40,
+      "answers": [
+        {
+          "answer": "Brazil",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Germany",
+          "aliases": ["West Germany"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Argentina",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "France",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Italy",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Spain",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Netherlands",
+          "aliases": ["Holland"],
+          "tier": "starter"
+        },
+        {
+          "answer": "England",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Croatia",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Uruguay",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Hungary",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Sweden",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Czechoslovakia",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "Olympics",
+      "sport": "Olympics",
+      "prompt": "Name an athlete with 5 or more Olympic gold medals.",
+      "hint": "Summer or Winter both count.",
+      "timeLimit": 45,
+      "answers": [
+        {
+          "answer": "Michael Phelps",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Usain Bolt",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Simone Biles",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Katie Ledecky",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Carl Lewis",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Mark Spitz",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Eric Heiden",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Larisa Latynina",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Paavo Nurmi",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Marit Bjorgen",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Ole Einar Bjorndalen",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Bjorn Daehlie",
+          "aliases": ["Bjoern Daehlie", "Bjorn Dahlie"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Matt Biondi",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Jenny Thompson",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Steve Redgrave",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Ray Ewry",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Birgit Fischer",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Vera Caslavska",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Nikolai Andrianov",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Ireen Wust",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "Team Sheet",
+      "sport": "All Sports",
+      "prompt": "Name a Western Conference team in the NHL, NBA or MLS.",
+      "hint": "Three leagues. 46 teams. The soccer ones are worth more.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Minnesota Wild",
+          "aliases": ["Wild"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Edmonton Oilers",
+          "aliases": ["Oilers"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Vegas Golden Knights",
+          "aliases": ["Golden Knights", "Knights", "VGK"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Dallas Stars",
+          "aliases": ["Stars"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Colorado Avalanche",
+          "aliases": ["Avalanche"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Nashville Predators",
+          "aliases": ["Predators"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Winnipeg Jets",
+          "aliases": ["Jets"],
+          "tier": "starter"
+        },
+        {
+          "answer": "St. Louis Blues",
+          "aliases": ["Blues"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Utah Mammoth",
+          "aliases": ["Mammoth"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Calgary Flames",
+          "aliases": ["Flames"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "San Jose Sharks",
+          "aliases": ["Sharks"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Seattle Kraken",
+          "aliases": ["Kraken"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Anaheim Ducks",
+          "aliases": ["Ducks"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Chicago Blackhawks",
+          "aliases": ["Blackhawks"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Los Angeles Kings",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Vancouver Canucks",
+          "aliases": ["Canucks"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Sacramento Kings",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Utah Jazz",
+          "aliases": ["Jazz"],
+          "tier": "starter"
+        },
+        {
+          "answer": "New Orleans Pelicans",
+          "aliases": ["Pelicans"],
+          "tier": "starter"
+        },
+        {
+          "answer": "LA Clippers",
+          "aliases": ["Clippers", "Los Angeles Clippers"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Phoenix Suns",
+          "aliases": ["Suns"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Oklahoma City Thunder",
+          "aliases": ["Thunder", "OKC", "OKC Thunder"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Golden State Warriors",
+          "aliases": ["Warriors", "Dubs"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Denver Nuggets",
+          "aliases": ["Nuggets"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Dallas Mavericks",
+          "aliases": ["Mavericks"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Portland Trail Blazers",
+          "aliases": ["Trail Blazers", "Blazers"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Minnesota Timberwolves",
+          "aliases": ["Timberwolves", "Wolves"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Houston Rockets",
+          "aliases": ["Rockets"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Memphis Grizzlies",
+          "aliases": ["Grizzlies"],
+          "tier": "starter"
+        },
+        {
+          "answer": "San Antonio Spurs",
+          "aliases": ["Spurs"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Los Angeles Lakers",
+          "aliases": ["Lakers"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Colorado Rapids",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "FC Dallas",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Sporting Kansas City",
+          "aliases": ["Kansas City", "Sporting KC", "SKC"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "LA Galaxy",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "San Jose Earthquakes",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Real Salt Lake",
+          "aliases": ["Salt Lake"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Houston Dynamo FC",
+          "aliases": ["Houston Dynamo", "Dynamo"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Portland Timbers",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Seattle Sounders FC",
+          "aliases": ["Seattle Sounders", "Sounders"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Vancouver Whitecaps",
+          "aliases": ["Whitecaps", "Vancouver Whitecaps FC"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Minnesota United FC",
+          "aliases": ["Minnesota United", "Loons"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "LAFC",
+          "aliases": ["Los Angeles FC"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Austin FC",
+          "aliases": ["Austin"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "St. Louis CITY SC",
+          "aliases": ["St Louis City", "St. Louis City SC"],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "San Diego FC",
+          "aliases": ["San Diego"],
+          "tier": "who_knows_ball"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "category": "Highlight Reel",
+      "sport": "Hockey",
+      "prompt": "Name a player who scored 500+ goals in the NHL.",
+      "hint": "Gretzky and Ovi are the easy ones. 50 players have done it.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Alex Ovechkin",
+          "aliases": ["Ovi", "Alexander Ovechkin", "Ovechkin"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Wayne Gretzky",
+          "aliases": ["The Great One", "Gretzky"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Gordie Howe",
+          "aliases": ["Mr. Hockey"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Jaromir Jagr",
+          "aliases": ["Jagr"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Brett Hull",
+          "aliases": ["The Golden Brett"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Marcel Dionne",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Phil Esposito",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Mike Gartner",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mark Messier",
+          "aliases": ["Moose"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Steve Yzerman",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Mario Lemieux",
+          "aliases": ["Mario", "Super Mario"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Teemu Selanne",
+          "aliases": ["The Finnish Flash", "Selanne"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Luc Robitaille",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Sidney Crosby",
+          "aliases": ["Sid the Kid", "Sid", "Crosby"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Brendan Shanahan",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Dave Andreychuk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Steven Stamkos",
+          "aliases": ["Stamkos", "Stammer"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Jarome Iginla",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Joe Sakic",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Bobby Hull",
+          "aliases": ["The Golden Jet"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Dino Ciccarelli",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Jari Kurri",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mark Recchi",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mike Bossy",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Patrick Marleau",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Joe Nieuwendyk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mats Sundin",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Mike Modano",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Guy Lafleur",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Johnny Bucyk",
+          "aliases": ["John Bucyk", "Chief"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Ron Francis",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Michel Goulet",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Maurice Richard",
+          "aliases": ["Rocket Richard", "The Rocket"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Stan Mikita",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Evgeni Malkin",
+          "aliases": ["Geno"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Keith Tkachuk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Frank Mahovlich",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "John Tavares",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Marian Hossa",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Bryan Trottier",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Pat Verbeek",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Dale Hawerchuk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Pierre Turgeon",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jeremy Roenick",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Gilbert Perreault",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Patrick Kane",
+          "aliases": ["Kaner"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Jean Beliveau",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Peter Bondra",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Joe Mullen",
+          "aliases": ["Joey Mullen"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Lanny McDonald",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "Highlight Reel",
+      "sport": "Baseball",
+      "prompt": "Name an MLB player who hit 50+ home runs in a season.",
+      "hint": "Ruth, Bonds, Judge... 34 players have done it.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Babe Ruth",
+          "aliases": ["The Bambino", "Babe", "George Herman Ruth", "Ruth"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Roger Maris",
+          "aliases": ["Maris"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Mickey Mantle",
+          "aliases": ["Mantle", "The Mick"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Ralph Kiner",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Cecil Fielder",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mark McGwire",
+          "aliases": ["McGwire", "Big Mac"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Sammy Sosa",
+          "aliases": ["Sosa"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Ken Griffey Jr.",
+          "aliases": [
+            "Ken Griffey",
+            "Griffey",
+            "Junior",
+            "Ken Griffey Jr",
+            "Griffey Jr"
+          ],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Greg Vaughn",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Albert Belle",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Alex Rodriguez",
+          "aliases": ["A-Rod", "ARod"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Jim Thome",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Brady Anderson",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Giancarlo Stanton",
+          "aliases": ["Mike Stanton", "Stanton"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Aaron Judge",
+          "aliases": ["Judge"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Ryan Howard",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "David Ortiz",
+          "aliases": ["Big Papi", "Papi"],
+          "tier": "starter"
+        },
+        {
+          "answer": "José Bautista",
+          "aliases": ["Jose Bautista", "Joey Bats"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Hank Greenberg",
+          "aliases": ["Hammerin Hank"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jimmie Foxx",
+          "aliases": ["Jimmy Foxx", "Double X"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Hack Wilson",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Prince Fielder",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Barry Bonds",
+          "aliases": ["Bonds"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Luis Gonzalez",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Andruw Jones",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Shohei Ohtani",
+          "aliases": ["Ohtani", "Shohei", "Sho"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Chris Davis",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Matt Olson",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Cal Raleigh",
+          "aliases": ["Big Dumper"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Kyle Schwarber",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Pete Alonso",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Willie Mays",
+          "aliases": ["Say Hey Kid"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Johnny Mize",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "George Foster",
+          "aliases": [],
+          "tier": "deep_cut"
+        }
+      ]
+    },
+    {
+      "category": "Solo Sports",
+      "sport": "F1",
+      "prompt": "Name a Formula 1 World Champion.",
+      "hint": "36 drivers since 1950. Hamilton and Schumacher are the layups.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Giuseppe Farina",
+          "aliases": ["Nino Farina"],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Juan Manuel Fangio",
+          "aliases": ["Fangio"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Alberto Ascari",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Mike Hawthorn",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Jack Brabham",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Phil Hill",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Graham Hill",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jim Clark",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "John Surtees",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Denny Hulme",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Jackie Stewart",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jochen Rindt",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Emerson Fittipaldi",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Niki Lauda",
+          "aliases": ["Lauda", "Nikki Lauda"],
+          "tier": "starter"
+        },
+        {
+          "answer": "James Hunt",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mario Andretti",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jody Scheckter",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Alan Jones",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Nelson Piquet",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Keke Rosberg",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Alain Prost",
+          "aliases": ["Prost"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Ayrton Senna",
+          "aliases": ["Senna"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Nigel Mansell",
+          "aliases": ["Mansell"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Michael Schumacher",
+          "aliases": ["Schumacher", "Schumi", "Michael Schumi"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Damon Hill",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jacques Villeneuve",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mika Hakkinen",
+          "aliases": ["Mika Häkkinen", "Hakkinen"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Fernando Alonso",
+          "aliases": ["Alonso"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Kimi Raikkonen",
+          "aliases": ["Kimi Räikkönen", "Raikkonen", "Iceman"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Lewis Hamilton",
+          "aliases": ["Hamilton"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Jenson Button",
+          "aliases": ["Button"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Sebastian Vettel",
+          "aliases": ["Vettel", "Seb Vettel"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Nico Rosberg",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Max Verstappen",
+          "aliases": ["Verstappen", "Mad Max"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Lando Norris",
+          "aliases": ["Norris", "Lando"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Kimi Antonelli",
+          "aliases": ["Andrea Kimi Antonelli", "Antonelli"],
+          "tier": "all_star"
+        }
+      ]
+    },
+    {
+      "category": "International",
+      "sport": "Soccer",
+      "prompt": "Name a club that has won the European Cup or Champions League.",
+      "hint": "24 clubs. Real Madrid has 15. Go find the one-timers.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Real Madrid",
+          "aliases": ["Real"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "AC Milan",
+          "aliases": ["Milan"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Bayern Munich",
+          "aliases": [
+            "Bayern",
+            "FC Bayern",
+            "Bayern Munchen",
+            "Bayern München"
+          ],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Liverpool",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Barcelona",
+          "aliases": ["Barca", "Barça", "FC Barcelona"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Ajax",
+          "aliases": ["Ajax Amsterdam"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Inter Milan",
+          "aliases": ["Inter", "Internazionale", "Inter Milano"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Manchester United",
+          "aliases": ["Man United", "Man Utd", "Manchester Utd"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Juventus",
+          "aliases": ["Juve"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Benfica",
+          "aliases": ["SL Benfica"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Chelsea",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Paris Saint-Germain",
+          "aliases": ["PSG", "Paris SG", "Paris Saint Germain", "Paris"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Nottingham Forest",
+          "aliases": ["Forest", "Nottm Forest"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Porto",
+          "aliases": ["FC Porto"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Borussia Dortmund",
+          "aliases": ["Dortmund", "BVB"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Celtic",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Hamburger SV",
+          "aliases": ["Hamburg", "HSV"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Steaua Bucharest",
+          "aliases": ["Steaua", "Steaua Bucuresti", "Steaua București", "FCSB"],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Marseille",
+          "aliases": ["Olympique de Marseille", "OM"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Manchester City",
+          "aliases": ["Man City"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Feyenoord",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Aston Villa",
+          "aliases": ["Villa"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "PSV Eindhoven",
+          "aliases": ["PSV"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Red Star Belgrade",
+          "aliases": ["Red Star", "Crvena Zvezda"],
+          "tier": "deep_cut"
+        }
+      ]
+    },
+    {
+      "category": "North American Sports",
+      "sport": "Basketball",
+      "prompt": "Name an NBA regular-season MVP from 2000 to 2024.",
+      "hint": "LeBron is the layup. Find the one-timers.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "LeBron James",
+          "aliases": ["LeBron", "King James"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Stephen Curry",
+          "aliases": ["Steph Curry", "Steph"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Giannis Antetokounmpo",
+          "aliases": ["Giannis", "Greek Freak"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Nikola Jokic",
+          "aliases": ["Jokic", "Joker"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Kobe Bryant",
+          "aliases": ["Kobe"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Kevin Durant",
+          "aliases": ["KD"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Shaquille O'Neal",
+          "aliases": ["Shaq", "Shaquille Oneal"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Tim Duncan",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "James Harden",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Russell Westbrook",
+          "aliases": ["Russ"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Derrick Rose",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Joel Embiid",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Dirk Nowitzki",
+          "aliases": ["Dirk"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Steve Nash",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Allen Iverson",
+          "aliases": ["AI", "The Answer", "Answer"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Kevin Garnett",
+          "aliases": ["KG"],
+          "tier": "deep_cut"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "category": "Draft Day",
+      "sport": "Hockey",
+      "prompt": "Name a player who went first overall in the NHL Draft.",
+      "hint": "Every year since 1963. McDavid is one. Go older.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Garry Monahan",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Claude Gauthier",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Andre Veilleux",
+          "aliases": ["André Veilleux"],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Barry Gibbs",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Rick Pagnutti",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Michel Plasse",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Rejean Houle",
+          "aliases": ["Réjean Houle"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Gilbert Perreault",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Guy Lafleur",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Billy Harris",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Denis Potvin",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Greg Joly",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Mel Bridgman",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Rick Green",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Dale McCourt",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Bobby Smith",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Rob Ramage",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Doug Wickenheiser",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Dale Hawerchuk",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Gord Kluzak",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Brian Lawton",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Mario Lemieux",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Wendel Clark",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Joe Murphy",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Pierre Turgeon",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mike Modano",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Mats Sundin",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Owen Nolan",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Eric Lindros",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Roman Hamrlik",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Alexandre Daigle",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Ed Jovanovski",
+          "aliases": ["Jovo"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Bryan Berard",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Chris Phillips",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Joe Thornton",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Vincent Lecavalier",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Patrik Stefan",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Rick DiPietro",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Ilya Kovalchuk",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Rick Nash",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Marc-Andre Fleury",
+          "aliases": ["Flower", "Marc Andre Fleury"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Alex Ovechkin",
+          "aliases": ["Ovi", "Ovechkin"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Sidney Crosby",
+          "aliases": ["Sid", "Crosby"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Erik Johnson",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Patrick Kane",
+          "aliases": ["Kaner"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Steven Stamkos",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "John Tavares",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Taylor Hall",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Ryan Nugent-Hopkins",
+          "aliases": ["RNH", "Nuge", "Ryan Nugent Hopkins"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Nail Yakupov",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Nathan MacKinnon",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Aaron Ekblad",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Connor McDavid",
+          "aliases": ["McDavid", "McJesus"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Auston Matthews",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Nico Hischier",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Rasmus Dahlin",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Jack Hughes",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Alexis Lafrenière",
+          "aliases": ["Lafreniere"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Owen Power",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Juraj Slafkovský",
+          "aliases": ["Slafkovsky", "Slaf"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Connor Bedard",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Macklin Celebrini",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Matthew Schaefer",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Gavin McKenna",
+          "aliases": [],
+          "tier": "starter"
+        }
+      ]
+    },
+    {
+      "category": "Solo Sports",
+      "sport": "Golf",
+      "prompt": "Name a golfer who won the Masters from 2000 to 2024.",
+      "hint": "Tiger has five green jackets. Not all of them count here.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Tiger Woods",
+          "aliases": ["Tiger"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Phil Mickelson",
+          "aliases": ["Lefty"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Scottie Scheffler",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Jordan Spieth",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Jon Rahm",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Bubba Watson",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Adam Scott",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Sergio Garcia",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Hideki Matsuyama",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Dustin Johnson",
+          "aliases": ["DJ"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Patrick Reed",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Vijay Singh",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Mike Weir",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Zach Johnson",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Angel Cabrera",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Charl Schwartzel",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Trevor Immelman",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Danny Willett",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "International",
+      "sport": "Soccer",
+      "prompt": "Name a Ballon d'Or winner from 2000 to 2024.",
+      "hint": "Messi and Ronaldo took most of them. Most.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Lionel Messi",
+          "aliases": ["Messi", "Leo Messi"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Cristiano Ronaldo",
+          "aliases": ["CR7", "Cristiano"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Luka Modric",
+          "aliases": ["Modric"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Karim Benzema",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Ronaldinho",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Kaka",
+          "aliases": ["Kaká"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Rodri",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Ronaldo",
+          "aliases": ["R9", "Ronaldo Nazario", "Ronaldo Nazário"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Fabio Cannavaro",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Andriy Shevchenko",
+          "aliases": ["Sheva"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Luis Figo",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Pavel Nedved",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Michael Owen",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "Olympics",
+      "sport": "Olympics",
+      "prompt": "Name a city that hosted the Summer Olympics from 1948 to 2024.",
+      "hint": "Some cities did it twice.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "London",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Tokyo",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Beijing",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Los Angeles",
+          "aliases": ["LA"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Paris",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Sydney",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Athens",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Rio de Janeiro",
+          "aliases": ["Rio"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Barcelona",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Atlanta",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Seoul",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Moscow",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Montreal",
+          "aliases": ["Montréal"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Munich",
+          "aliases": ["München"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Mexico City",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Rome",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Melbourne",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Helsinki",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "North American Sports",
+      "sport": "Football",
+      "prompt": "Name a starting quarterback who won a Super Bowl from 2001 to 2024.",
+      "hint": "Brady has seven of them. Go past him.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Tom Brady",
+          "aliases": ["Brady"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Patrick Mahomes",
+          "aliases": ["Mahomes"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Peyton Manning",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Eli Manning",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Aaron Rodgers",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Drew Brees",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Russell Wilson",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Ben Roethlisberger",
+          "aliases": ["Big Ben"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Matthew Stafford",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Joe Flacco",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Nick Foles",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Brad Johnson",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Trent Dilfer",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "category": "Solo Sports",
+      "sport": "F1",
+      "prompt": "Name a Formula 1 world champion from 2000 to 2024.",
+      "hint": "Only eight drivers did it.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Lewis Hamilton",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Max Verstappen",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Michael Schumacher",
+          "aliases": ["Schumi"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Sebastian Vettel",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Fernando Alonso",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Kimi Raikkonen",
+          "aliases": ["Kimi", "Kimi Räikkönen"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Nico Rosberg",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jenson Button",
+          "aliases": [],
+          "tier": "deep_cut"
+        }
+      ]
+    },
+    {
+      "category": "International",
+      "sport": "Soccer",
+      "prompt": "Name a club that won the Champions League from 2000 to 2024.",
+      "hint": "Real Madrid won eight. Find the others.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Real Madrid",
+          "aliases": ["Madrid"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Barcelona",
+          "aliases": ["Barca", "Barça", "FC Barcelona"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Bayern Munich",
+          "aliases": ["Bayern", "Bayern München"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Liverpool",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Chelsea",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Manchester City",
+          "aliases": ["Man City"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Manchester United",
+          "aliases": ["Man United", "Man Utd", "Man U"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "AC Milan",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Inter Milan",
+          "aliases": ["Inter", "Internazionale"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Porto",
+          "aliases": ["FC Porto"],
+          "tier": "deep_cut"
+        }
+      ]
+    },
+    {
+      "category": "Olympics",
+      "sport": "Olympics",
+      "prompt": "Name a city that hosted the Winter Olympics from 1948 to 2022.",
+      "hint": "Only one city did it twice in that span.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Vancouver",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Beijing",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Sochi",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Salt Lake City",
+          "aliases": ["Salt Lake"],
+          "tier": "starter"
+        },
+        {
+          "answer": "PyeongChang",
+          "aliases": ["Pyeongchang"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Calgary",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Turin",
+          "aliases": ["Torino"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Lake Placid",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Lillehammer",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Nagano",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Sarajevo",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Innsbruck",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Albertville",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Sapporo",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Grenoble",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Oslo",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Squaw Valley",
+          "aliases": ["Palisades Tahoe"],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Cortina d'Ampezzo",
+          "aliases": ["Cortina"],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "St. Moritz",
+          "aliases": ["St Moritz", "Saint Moritz"],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "North American Sports",
+      "sport": "Hockey",
+      "prompt": "Name a team that won the Stanley Cup from 2000 to 2024.",
+      "hint": "There was no Cup in 2005.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Chicago Blackhawks",
+          "aliases": ["Blackhawks", "Chicago", "Hawks"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Pittsburgh Penguins",
+          "aliases": ["Penguins", "Pittsburgh", "Pens"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Tampa Bay Lightning",
+          "aliases": ["Lightning", "Tampa Bay", "Tampa", "Bolts"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Detroit Red Wings",
+          "aliases": ["Red Wings", "Detroit"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Colorado Avalanche",
+          "aliases": ["Avalanche", "Colorado", "Avs"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Los Angeles Kings",
+          "aliases": ["Kings", "LA Kings"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Boston Bruins",
+          "aliases": ["Bruins", "Boston"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Florida Panthers",
+          "aliases": ["Panthers", "Florida"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Vegas Golden Knights",
+          "aliases": ["Golden Knights", "Vegas"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Washington Capitals",
+          "aliases": ["Capitals", "Caps", "Washington"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "St. Louis Blues",
+          "aliases": ["Blues", "St Louis", "St. Louis"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "New Jersey Devils",
+          "aliases": ["Devils", "New Jersey"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Anaheim Ducks",
+          "aliases": ["Ducks", "Anaheim"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Carolina Hurricanes",
+          "aliases": ["Hurricanes", "Carolina", "Canes"],
+          "tier": "deep_cut"
+        }
+      ]
+    },
+    {
+      "category": "Solo Sports",
+      "sport": "Tennis",
+      "prompt": "Name a woman who won the US Open singles title from 2000 to 2024.",
+      "hint": "The Williams sisters are only the start.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Serena Williams",
+          "aliases": ["Serena"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Venus Williams",
+          "aliases": ["Venus"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Coco Gauff",
+          "aliases": ["Coco"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Naomi Osaka",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Aryna Sabalenka",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Iga Swiatek",
+          "aliases": ["Iga Świątek"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Emma Raducanu",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Maria Sharapova",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Kim Clijsters",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Justine Henin",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Bianca Andreescu",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Sloane Stephens",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Angelique Kerber",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Svetlana Kuznetsova",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Samantha Stosur",
+          "aliases": ["Sam Stosur"],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Flavia Pennetta",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "category": "International",
+      "sport": "Soccer",
+      "prompt": "Name a club that has won the Premier League (since 1992-93).",
+      "hint": "Only seven clubs have done it.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Manchester United",
+          "aliases": ["Man United", "Man Utd", "Man U"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Manchester City",
+          "aliases": ["Man City"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Chelsea",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Arsenal",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Liverpool",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Leicester City",
+          "aliases": ["Leicester"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Blackburn Rovers",
+          "aliases": ["Blackburn"],
+          "tier": "deep_cut"
+        }
+      ]
+    },
+    {
+      "category": "Olympics",
+      "sport": "Olympics",
+      "prompt": "Name a man who won Olympic gold in the 100m from 1984 to 2024.",
+      "hint": "Bolt has three. Who else?",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Usain Bolt",
+          "aliases": ["Bolt"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Carl Lewis",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Noah Lyles",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Justin Gatlin",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Maurice Greene",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Donovan Bailey",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Linford Christie",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Marcell Jacobs",
+          "aliases": ["Lamont Marcell Jacobs"],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "North American Sports",
+      "sport": "Baseball",
+      "prompt": "Name a team that won the World Series from 2000 to 2024.",
+      "hint": "The Red Sox won four. Plenty of teams won one.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "New York Yankees",
+          "aliases": ["Yankees"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Boston Red Sox",
+          "aliases": ["Red Sox"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Los Angeles Dodgers",
+          "aliases": ["Dodgers"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "San Francisco Giants",
+          "aliases": ["Giants", "SF Giants"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Houston Astros",
+          "aliases": ["Astros", "Houston"],
+          "tier": "starter"
+        },
+        {
+          "answer": "St. Louis Cardinals",
+          "aliases": ["Cardinals", "Cards"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Chicago Cubs",
+          "aliases": ["Cubs"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Philadelphia Phillies",
+          "aliases": ["Phillies", "Philadelphia"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Atlanta Braves",
+          "aliases": ["Braves", "Atlanta"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Texas Rangers",
+          "aliases": ["Rangers", "Texas"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Kansas City Royals",
+          "aliases": ["Royals", "Kansas City"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Washington Nationals",
+          "aliases": ["Nationals", "Nats"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Chicago White Sox",
+          "aliases": ["White Sox"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Arizona Diamondbacks",
+          "aliases": ["Diamondbacks", "D-backs", "Dbacks"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Florida Marlins",
+          "aliases": ["Marlins", "Miami Marlins"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Anaheim Angels",
+          "aliases": ["Angels", "Los Angeles Angels"],
+          "tier": "deep_cut"
+        }
+      ]
+    },
+    {
+      "category": "Solo Sports",
+      "sport": "Tennis",
+      "prompt": "Name a man who won the French Open singles title from 2000 to 2024.",
+      "hint": "Nadal won fourteen. Not every year.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Rafael Nadal",
+          "aliases": ["Rafa", "Nadal"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Novak Djokovic",
+          "aliases": ["Djoker"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Roger Federer",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Carlos Alcaraz",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Stan Wawrinka",
+          "aliases": ["Stanislas Wawrinka"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Gustavo Kuerten",
+          "aliases": ["Guga"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Juan Carlos Ferrero",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Gaston Gaudio",
+          "aliases": ["Gastón Gaudio"],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Albert Costa",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "Olympics",
+      "sport": "Basketball",
+      "prompt": "Name a player from the 1992 US Olympic \"Dream Team\".",
+      "hint": "Jordan, Magic and Bird are the easy three.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Michael Jordan",
+          "aliases": ["MJ"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Magic Johnson",
+          "aliases": ["Magic", "Earvin Johnson"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Larry Bird",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Charles Barkley",
+          "aliases": ["Barkley"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Scottie Pippen",
+          "aliases": ["Pippen"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Karl Malone",
+          "aliases": ["The Mailman", "Mailman"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Patrick Ewing",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "John Stockton",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "David Robinson",
+          "aliases": ["The Admiral", "Admiral"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Clyde Drexler",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Chris Mullin",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Christian Laettner",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "category": "International",
+      "sport": "Soccer",
+      "prompt": "Name a country that has won the men's World Cup.",
+      "hint": "Only eight countries have ever lifted it.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Brazil",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Germany",
+          "aliases": ["West Germany"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Argentina",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "France",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Italy",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Spain",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "England",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Uruguay",
+          "aliases": [],
+          "tier": "deep_cut"
+        }
+      ]
+    },
+    {
+      "category": "North American Sports",
+      "sport": "Hockey",
+      "prompt": "Name a Hart Trophy winner (NHL MVP) from 2000 to 2024.",
+      "hint": "McDavid has three. Find the goalie.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Connor McDavid",
+          "aliases": ["McDavid"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Sidney Crosby",
+          "aliases": ["Sid Crosby"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Alex Ovechkin",
+          "aliases": ["Ovi", "Alexander Ovechkin"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Auston Matthews",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Nathan MacKinnon",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Leon Draisaitl",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Nikita Kucherov",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Evgeni Malkin",
+          "aliases": ["Geno", "Evgeny Malkin"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Patrick Kane",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Carey Price",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Taylor Hall",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Corey Perry",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Joe Sakic",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Joe Thornton",
+          "aliases": ["Jumbo Joe"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Henrik Sedin",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Martin St. Louis",
+          "aliases": [
+            "Marty St. Louis",
+            "Martin St Louis",
+            "St. Louis",
+            "St Louis"
+          ],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Peter Forsberg",
+          "aliases": ["Foppa"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Chris Pronger",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Jose Theodore",
+          "aliases": ["José Théodore"],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "Solo Sports",
+      "sport": "Golf",
+      "prompt": "Name a golfer who won The Open Championship from 2000 to 2024.",
+      "hint": "The claret jug has gone to a lot of names.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Tiger Woods",
+          "aliases": ["Tiger"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Rory McIlroy",
+          "aliases": ["Rory"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Phil Mickelson",
+          "aliases": ["Lefty"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Jordan Spieth",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Xander Schauffele",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Ernie Els",
+          "aliases": ["The Big Easy", "Big Easy"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Collin Morikawa",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Shane Lowry",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Cameron Smith",
+          "aliases": ["Cam Smith"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Henrik Stenson",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Padraig Harrington",
+          "aliases": ["Pádraig Harrington"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Zach Johnson",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Louis Oosthuizen",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Darren Clarke",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Francesco Molinari",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Stewart Cink",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Brian Harman",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "David Duval",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Ben Curtis",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Todd Hamilton",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "North American Sports",
+      "sport": "Football",
+      "prompt": "Name an NFL MVP (AP) from the 2000 to 2024 seasons.",
+      "hint": "Peyton won five. Find the running backs.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Peyton Manning",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Tom Brady",
+          "aliases": ["Brady"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Aaron Rodgers",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Patrick Mahomes",
+          "aliases": ["Mahomes"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Lamar Jackson",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Josh Allen",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Adrian Peterson",
+          "aliases": ["AP", "All Day"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Cam Newton",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Matt Ryan",
+          "aliases": ["Matty Ice"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "LaDainian Tomlinson",
+          "aliases": ["LT"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Shaun Alexander",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Kurt Warner",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Marshall Faulk",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Steve McNair",
+          "aliases": ["Air McNair"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Rich Gannon",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "Solo Sports",
+      "sport": "Tennis",
+      "prompt": "Name a man who won the Australian Open singles title from 2000 to 2024.",
+      "hint": "Djokovic owns Melbourne. He was not alone.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Novak Djokovic",
+          "aliases": ["Djoker"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Roger Federer",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Rafael Nadal",
+          "aliases": ["Rafa"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Jannik Sinner",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Andre Agassi",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Stan Wawrinka",
+          "aliases": ["Stanislas Wawrinka"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Marat Safin",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Thomas Johansson",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "category": "International",
+      "sport": "Soccer",
+      "prompt": "Name a country that has won the men's European Championship.",
+      "hint": "Spain have four. A few surprises won one.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Spain",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Germany",
+          "aliases": ["West Germany"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "France",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Italy",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Portugal",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Netherlands",
+          "aliases": ["Holland"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Denmark",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Greece",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Soviet Union",
+          "aliases": ["USSR"],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Czechoslovakia",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "Olympics",
+      "sport": "Hockey",
+      "prompt": "Name a country that won men's Olympic hockey gold, up to 2022.",
+      "hint": "Canada leads the way. The list goes back to 1920.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Canada",
+          "aliases": [],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "United States",
+          "aliases": ["USA", "US", "America"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Soviet Union",
+          "aliases": ["USSR"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Sweden",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Finland",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Czech Republic",
+          "aliases": ["Czechia"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Russia",
+          "aliases": ["Olympic Athletes from Russia", "OAR"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Unified Team",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Great Britain",
+          "aliases": ["Britain", "UK"],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "North American Sports",
+      "sport": "Basketball",
+      "prompt": "Name an NBA Finals MVP from 2000 to 2024.",
+      "hint": "Shaq won three straight. Then it spreads out.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "LeBron James",
+          "aliases": ["LeBron", "King James"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Shaquille O'Neal",
+          "aliases": ["Shaq", "Shaquille Oneal"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Kobe Bryant",
+          "aliases": ["Kobe"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Tim Duncan",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Kevin Durant",
+          "aliases": ["KD"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Stephen Curry",
+          "aliases": ["Steph Curry", "Steph"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Kawhi Leonard",
+          "aliases": ["Kawhi"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Giannis Antetokounmpo",
+          "aliases": ["Giannis", "Greek Freak"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Nikola Jokic",
+          "aliases": ["Jokic", "Joker"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Dwyane Wade",
+          "aliases": ["D-Wade", "Dwayne Wade"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Dirk Nowitzki",
+          "aliases": ["Dirk"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jaylen Brown",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Tony Parker",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Paul Pierce",
+          "aliases": ["The Truth", "Truth"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Andre Iguodala",
+          "aliases": ["Iggy"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Chauncey Billups",
+          "aliases": ["Mr. Big Shot"],
+          "tier": "deep_cut"
+        }
+      ]
+    },
+    {
+      "category": "Solo Sports",
+      "sport": "Golf",
+      "prompt": "Name a golfer who won the US Open (golf) from 2000 to 2024.",
+      "hint": "Tiger won by fifteen in 2000. Who else?",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Tiger Woods",
+          "aliases": ["Tiger"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Rory McIlroy",
+          "aliases": ["Rory"],
+          "tier": "benchwarmer"
+        },
+        {
+          "answer": "Brooks Koepka",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Bryson DeChambeau",
+          "aliases": ["Bryson"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Jordan Spieth",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Jon Rahm",
+          "aliases": [],
+          "tier": "starter"
+        },
+        {
+          "answer": "Dustin Johnson",
+          "aliases": ["DJ"],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Justin Rose",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Wyndham Clark",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Matt Fitzpatrick",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Jim Furyk",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Retief Goosen",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Angel Cabrera",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Graeme McDowell",
+          "aliases": ["G-Mac"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Martin Kaymer",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Gary Woodland",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Webb Simpson",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Geoff Ogilvy",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Lucas Glover",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Michael Campbell",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    },
+    {
+      "category": "Olympics",
+      "sport": "Swimming",
+      "prompt": "Name a man who won Olympic gold in the 100m freestyle from 1984 to 2024.",
+      "hint": "Phelps never won this one.",
+      "timeLimit": 30,
+      "answers": [
+        {
+          "answer": "Caeleb Dressel",
+          "aliases": ["Dressel"],
+          "tier": "starter"
+        },
+        {
+          "answer": "Nathan Adrian",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Kyle Chalmers",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Matt Biondi",
+          "aliases": [],
+          "tier": "all_star"
+        },
+        {
+          "answer": "Pan Zhanle",
+          "aliases": [],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Alexander Popov",
+          "aliases": ["Popov", "Aleksandr Popov"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Pieter van den Hoogenband",
+          "aliases": ["Hoogie", "van den Hoogenband"],
+          "tier": "deep_cut"
+        },
+        {
+          "answer": "Alain Bernard",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        },
+        {
+          "answer": "Rowdy Gaines",
+          "aliases": [],
+          "tier": "who_knows_ball"
+        }
+      ]
+    }
+  ]
+]

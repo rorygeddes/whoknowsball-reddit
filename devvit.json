@@ -1,6 +1,9 @@
 {
   "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
   "name": "whoknowsball",
+  "permissions": {
+    "redis": true
+  },
   "post": {
     "dir": "dist/client",
     "entrypoints": {
@@ -20,26 +23,24 @@
   "menu": {
     "items": [
       {
-        "label": "Create a new post",
-        "description": "whoknowsball",
+        "label": "Post today's Who Knows Ball",
+        "description": "Makes today's quiz post if it isn't up yet",
         "location": "subreddit",
         "forUserType": "moderator",
         "endpoint": "/internal/menu/post-create"
-      },
-      {
-        "label": "Example form",
-        "description": "Show a simple form",
-        "location": "subreddit",
-        "forUserType": "moderator",
-        "endpoint": "/internal/menu/example-form"
       }
     ]
   },
-  "forms": {
-    "exampleForm": "/internal/form/example-submit"
-  },
   "triggers": {
     "onAppInstall": "/internal/triggers/on-app-install"
+  },
+  "scheduler": {
+    "tasks": {
+      "daily-post": {
+        "endpoint": "/internal/scheduler/daily-post",
+        "cron": "5 5 * * *"
+      }
+    }
   },
   "scripts": {
     "dev": "vite build --watch",
