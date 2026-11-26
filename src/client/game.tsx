@@ -109,64 +109,66 @@ export const App = () => {
   return (
     <>
       <StadiumBg />
-      <header className="post-head">
-        <span className="brand">
-          <BrandBall /> Who Knows Ball
-        </span>
-        {day.streak > 0 && (
-          <span className="streak-pill">
-            <Icon name="flame" size={14} /> {day.streak}
+      <div className={`app ${phase.at === 'result' ? 'fit' : ''}`}>
+        <header className="post-head">
+          <span className="brand">
+            <BrandBall /> Who Knows Ball
           </span>
-        )}
-      </header>
-      <main>
-        <div className="stage">
-          {phase.at !== 'summary' && (
-            <div className="progress">
-              {day.segments.map((s, k) =>
-                s.status === 'done' ? (
-                  <i
-                    key={k}
-                    className="on"
-                    style={{ ['--c' as string]: TIERS[s.tier].color }}
-                  />
-                ) : (
-                  <i key={k} className={k === current ? 'cur' : ''} />
-                )
-              )}
-            </div>
+          {day.streak > 0 && (
+            <span className="streak-pill">
+              <Icon name="flame" size={14} /> {day.streak}
+            </span>
           )}
-          {phase.at === 'intro' && (
-            <Intro
-              q={day.questions[phase.i]!}
-              onGo={() => setPhase({ at: 'spin', i: phase.i })}
-            />
-          )}
-          {phase.at === 'spin' && (
-            <Spin
-              q={day.questions[phase.i]!}
-              onDone={() => setPhase({ at: 'question', i: phase.i })}
-            />
-          )}
-          {phase.at === 'question' && (
-            <Question
-              key={phase.i}
-              q={day.questions[phase.i]!}
-              offset={offset}
-              onDone={(r) => finish(phase.i, r)}
-            />
-          )}
-          {phase.at === 'result' && (
-            <Result
-              q={day.questions[phase.i]!}
-              r={phase.r}
-              last={phase.i === day.questions.length - 1}
-              onNext={() => next(phase.i)}
-            />
-          )}
-          {phase.at === 'summary' && <Summary day={day} />}
-        </div>
-      </main>
+        </header>
+        <main>
+          <div className="stage">
+            {phase.at !== 'summary' && (
+              <div className="progress">
+                {day.segments.map((s, k) =>
+                  s.status === 'done' ? (
+                    <i
+                      key={k}
+                      className="on"
+                      style={{ ['--c' as string]: TIERS[s.tier].color }}
+                    />
+                  ) : (
+                    <i key={k} className={k === current ? 'cur' : ''} />
+                  )
+                )}
+              </div>
+            )}
+            {phase.at === 'intro' && (
+              <Intro
+                q={day.questions[phase.i]!}
+                onGo={() => setPhase({ at: 'spin', i: phase.i })}
+              />
+            )}
+            {phase.at === 'spin' && (
+              <Spin
+                q={day.questions[phase.i]!}
+                onDone={() => setPhase({ at: 'question', i: phase.i })}
+              />
+            )}
+            {phase.at === 'question' && (
+              <Question
+                key={phase.i}
+                q={day.questions[phase.i]!}
+                offset={offset}
+                onDone={(r) => finish(phase.i, r)}
+              />
+            )}
+            {phase.at === 'result' && (
+              <Result
+                q={day.questions[phase.i]!}
+                r={phase.r}
+                last={phase.i === day.questions.length - 1}
+                onNext={() => next(phase.i)}
+              />
+            )}
+            {phase.at === 'summary' && <Summary day={day} />}
+          </div>
+        </main>
+      </div>
       {boom && (
         <TierBoom
           key={boom.key}
@@ -347,67 +349,59 @@ function Result({
 }) {
   const t = TIERS[r.segment.tier];
   const hit = r.segment.answer !== null;
+  const fixed =
+    hit && r.guess && norm(r.guess) !== norm(r.segment.answer ?? '');
   return (
     <>
       {r.segment.points >= 85 && <Confetti />}
       <div className="result" style={{ ['--c' as string]: t.color }}>
-        <div className="playercard">
-          <span className="ptier">{t.label.toUpperCase()}</span>
-          {hit ? (
-            <CartoonPlayer
-              name={r.segment.answer}
-              sport={q.sport}
-              isTeam={false}
-            />
-          ) : (
-            <div style={{ textAlign: 'center', padding: '50px 0' }}>
-              <Icon
-                name={r.segment.tier === 'timeout' ? 'timer' : 'wall'}
-                size={110}
-                strokeWidth={1.6}
-                color={t.color}
+        <div className="result-top">
+          <div className="playercard">
+            <span className="ptier">{t.label.toUpperCase()}</span>
+            {hit ? (
+              <CartoonPlayer
+                name={r.segment.answer}
+                sport={q.sport}
+                isTeam={false}
               />
+            ) : (
+              <div className="ko-icon">
+                <Icon
+                  name={r.segment.tier === 'timeout' ? 'timer' : 'wall'}
+                  size={110}
+                  strokeWidth={1.6}
+                  color={t.color}
+                />
+              </div>
+            )}
+            <div className="pname">{hit ? r.segment.answer : t.label}</div>
+          </div>
+          <div className="result-score">
+            <TierBadge tier={r.segment.tier} big />
+            <div className="bigpoints">
+              +<CountUp to={r.segment.points} />
+              <small>pts</small>
             </div>
-          )}
-          <div className="pname">{hit ? r.segment.answer : t.label}</div>
-        </div>
-        <div>
-          <TierBadge tier={r.segment.tier} big />
-          <div className="bigpoints" style={{ marginTop: 14 }}>
-            +<CountUp to={r.segment.points} />
-            <small>pts</small>
-          </div>
-          <p className="muted" style={{ margin: '6px 0 0' }}>
-            {hit && r.sharePct !== null
-              ? `${r.sharePct}% of ${r.players} player${r.players === 1 ? '' : 's'} said this so far. ${t.blurb}`
-              : t.blurb}
-          </p>
-          {hit && r.guess && norm(r.guess) !== norm(r.segment.answer ?? '') && (
-            <p className="autocorrect">
-              <Icon name="hint" size={15} /> Autocorrected: you typed{' '}
-              <s>{r.guess}</s> <b>{r.segment.answer}</b>
+            <p className="muted result-blurb">
+              {hit && r.sharePct !== null
+                ? `${r.sharePct}% of ${r.players} player${r.players === 1 ? '' : 's'} said this so far. ${t.blurb}`
+                : t.blurb}
             </p>
-          )}
-          <div
-            style={{
-              marginTop: 18,
-              fontWeight: 700,
-              fontSize: 13,
-              letterSpacing: '.06em',
-              textTransform: 'uppercase',
-            }}
-            className="muted"
-          >
-            The board
-          </div>
-          <TierBoard reveal={r.board} mine={r.segment.answer} />
-          <div style={{ marginTop: 22 }}>
-            <button className="btn" onClick={onNext}>
-              {last ? 'Final score' : 'Next segment'}{' '}
-              <Icon name="play" size={18} />
-            </button>
           </div>
         </div>
+        {fixed && (
+          <p className="autocorrect">
+            <Icon name="hint" size={15} /> Autocorrected: you typed{' '}
+            <s>{r.guess}</s> <b>{r.segment.answer}</b>
+          </p>
+        )}
+        <div className="result-board">
+          <div className="board-label muted">The board</div>
+          <TierBoard reveal={r.board} mine={r.segment.answer} />
+        </div>
+        <button className="btn result-next" onClick={onNext}>
+          {last ? 'Final score' : 'Next segment'} <Icon name="play" size={18} />
+        </button>
       </div>
     </>
   );
@@ -435,112 +429,79 @@ function Summary({ day }: { day: DayResponse }) {
   };
 
   return (
-    <div className="final">
-      {total >= 300 && <Confetti count={90} />}
-      <div className="final-left">
-        <CartoonPlayer name={day.username} sport="" size={150} isTeam={false} />
-        <div className="final-user">u/{day.username}</div>
-        <div className="summary-score">
-          <CountUp to={total} ms={1400} />
-        </div>
-        <div className="muted display" style={{ fontSize: 18 }}>
-          out of {day.questions.length * 100}
-        </div>
-        {day.streak > 0 && (
-          <div className="streak-pill" style={{ marginTop: 12 }}>
-            <Icon name="flame" size={16} /> {day.streak} day streak
+    <div className="final-wrap">
+      <div className="final">
+        {total >= 300 && <Confetti count={90} />}
+        <div className="final-left">
+          <CartoonPlayer
+            name={day.username}
+            sport=""
+            size={150}
+            isTeam={false}
+          />
+          <div className="final-user">u/{day.username}</div>
+          <div className="summary-score">
+            <CountUp to={total} ms={1400} />
           </div>
-        )}
-        <button
-          className="btn"
-          style={{ marginTop: 16, fontSize: 18, padding: '12px 22px' }}
-          onClick={share}
-        >
-          <Icon name="copy" size={18} /> Share
-        </button>
-      </div>
-      <div className="final-center">
-        <div className="final-date">
-          {weekday}
-          <br />
-          {rest.join(', ')}
-        </div>
-        <div className="final-title">FINAL</div>
-        <div
-          className="card"
-          style={{
-            marginTop: 14,
-            width: '100%',
-            textAlign: 'left',
-            padding: 16,
-          }}
-        >
-          <div className="display" style={{ fontSize: 18, marginBottom: 6 }}>
-            Today&apos;s standings
+          <div className="muted display" style={{ fontSize: 18 }}>
+            out of {day.questions.length * 100}
           </div>
-          {!lb ? (
-            <div className="muted">Loading…</div>
-          ) : (
-            <>
-              {lb.top.map((p, k) => (
-                <div
-                  key={p.username}
-                  className={`lb-row ${p.username === day.username ? 'me' : ''}`}
-                >
-                  <span>
-                    {k + 1}. u/{p.username}
-                  </span>
-                  <b>{p.points}</b>
-                </div>
-              ))}
-              {lb.me && lb.me.rank > lb.top.length && (
-                <div className="lb-row me">
-                  <span>
-                    {lb.me.rank}. u/{day.username}
-                  </span>
-                  <b>{lb.me.points}</b>
-                </div>
-              )}
-              <div className="muted" style={{ fontSize: 12, marginTop: 6 }}>
-                {lb.players} player{lb.players === 1 ? '' : 's'} today
-              </div>
-            </>
+          {day.streak > 0 && (
+            <div className="streak-pill" style={{ marginTop: 12 }}>
+              <Icon name="flame" size={16} /> {day.streak} day streak
+            </div>
           )}
+          <button
+            className="btn"
+            style={{ marginTop: 16, fontSize: 18, padding: '12px 22px' }}
+            onClick={share}
+          >
+            <Icon name="copy" size={18} /> Share
+          </button>
+        </div>
+        <div className="final-center">
+          <div className="final-date">
+            {weekday}
+            <br />
+            {rest.join(', ')}
+          </div>
+          <div className="final-title">FINAL</div>
+        </div>
+        <div className="final-right">
+          {day.questions.map((q, i) => {
+            const s = day.segments[i]!;
+            const t = s.status === 'done' ? TIERS[s.tier] : TIERS.miss;
+            const st = sportStyle(q.sport);
+            return (
+              <button
+                className="fseg"
+                key={q.slot}
+                style={{
+                  ['--c' as string]: st.color,
+                  animationDelay: `${i * 0.08}s`,
+                }}
+                onClick={() => setSheet(i)}
+                title="See every answer"
+              >
+                <span className="fseg-icon">
+                  <Icon name={st.icon} size={22} color={st.color} />
+                </span>
+                <div className="fseg-mid">
+                  <div className="fseg-cat">{q.category}</div>
+                  <div className="fseg-ans">
+                    {s.status === 'done' ? (s.answer ?? t.label) : t.label}
+                  </div>
+                </div>
+                <div className="fseg-pts">
+                  <span>{t.label}</span>
+                  <b>+{s.status === 'done' ? s.points : 0}</b>
+                </div>
+              </button>
+            );
+          })}
         </div>
       </div>
-      <div className="final-right">
-        {day.questions.map((q, i) => {
-          const s = day.segments[i]!;
-          const t = s.status === 'done' ? TIERS[s.tier] : TIERS.miss;
-          const st = sportStyle(q.sport);
-          return (
-            <button
-              className="fseg"
-              key={q.slot}
-              style={{
-                ['--c' as string]: st.color,
-                animationDelay: `${i * 0.08}s`,
-              }}
-              onClick={() => setSheet(i)}
-              title="See every answer"
-            >
-              <span className="fseg-icon">
-                <Icon name={st.icon} size={22} color={st.color} />
-              </span>
-              <div className="fseg-mid">
-                <div className="fseg-cat">{q.category}</div>
-                <div className="fseg-ans">
-                  {s.status === 'done' ? (s.answer ?? t.label) : t.label}
-                </div>
-              </div>
-              <div className="fseg-pts">
-                <span>{t.label}</span>
-                <b>+{s.status === 'done' ? s.points : 0}</b>
-              </div>
-            </button>
-          );
-        })}
-      </div>
+      <Standings lb={lb} me={day.username} />
       {sheet !== null && (
         <AnswerSheet
           q={day.questions[sheet]!}
@@ -549,6 +510,48 @@ function Summary({ day }: { day: DayResponse }) {
         />
       )}
     </div>
+  );
+}
+
+function Standings({
+  lb,
+  me,
+}: {
+  lb: LeaderboardResponse | null;
+  me: string | null;
+}) {
+  const meBelow = lb?.me && lb.me.rank > lb.top.length ? lb.me : null;
+  return (
+    <section className="standings">
+      <div className="standings-head">
+        <span className="display">Standings</span>
+        {lb && (
+          <span className="muted">
+            {lb.players} player{lb.players === 1 ? '' : 's'} today
+          </span>
+        )}
+      </div>
+      {!lb ? (
+        <div className="muted">Loading…</div>
+      ) : (
+        <ol>
+          {lb.top.map((p, k) => (
+            <li key={p.username} className={p.username === me ? 'me' : ''}>
+              <span className={`rank r${k + 1}`}>{k + 1}</span>
+              <span className="who">u/{p.username}</span>
+              <b>{p.points}</b>
+            </li>
+          ))}
+          {meBelow && (
+            <li className="me gap">
+              <span className="rank">{meBelow.rank}</span>
+              <span className="who">u/{me}</span>
+              <b>{meBelow.points}</b>
+            </li>
+          )}
+        </ol>
+      )}
+    </section>
   );
 }
 

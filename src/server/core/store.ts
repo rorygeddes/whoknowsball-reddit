@@ -145,7 +145,7 @@ export async function writeStreak(user: string, s: Streak): Promise<void> {
 export async function leaderboard(day: string, user: string | null) {
   const key = lbKey(day);
   const [top, players, rank, points] = await Promise.all([
-    redis.zRange(key, 0, 9, { by: 'rank', reverse: true }),
+    redis.zRange(key, 0, 24, { by: 'rank', reverse: true }),
     redis.zCard(key),
     user ? redis.zRank(key, user) : Promise.resolve(undefined),
     user ? redis.zScore(key, user) : Promise.resolve(undefined),
