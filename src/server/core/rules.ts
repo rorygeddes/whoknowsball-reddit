@@ -10,7 +10,7 @@ export type Answer = {
 export const norm = (t: string) =>
   t
     .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
+    .replace(/\p{M}/gu, '')
     .toLowerCase()
     .replace(/[^a-z0-9]/g, '');
 
